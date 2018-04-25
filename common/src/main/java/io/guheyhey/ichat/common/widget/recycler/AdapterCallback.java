@@ -6,5 +6,6 @@ package io.guheyhey.ichat.common.widget.recycler;
  * Time: 21:34
  * Description:
  */
-public interface AdapterCallback {
+public interface AdapterCallback<Data> {
+    void update(Data data, RecyclerAdapter.ViewHolder<Data> holder);
 }
